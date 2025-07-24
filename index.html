@@ -68,19 +68,44 @@
 
   <!-- Hero Section -->
   <main class="pt-32 text-center">
-    <section class="hero text-white py-20 px-4">
-      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-amber-400">Welcome to Waheguru Nursing Classes</h1>
-      <p class="text-xl mb-8 max-w-2xl mx-auto">Your pathway to a rewarding career in nursing. We provide comprehensive coaching for all nursing exams.</p>
-      <a href="enrol.html" class="btn">Enrol Now</a>
+    <section class="hero text-white py-20 px-4" style="position:relative;overflow:hidden;">
+      <video autoplay muted loop playsinline id="hero-bg-video" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+        <source src="Videos/bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div style="position:relative;z-index:1;">
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-amber-400">Welcome to Waheguru Nursing Classes</h1>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">Your pathway to a rewarding career in nursing. We provide comprehensive coaching for all nursing exams.</p>
+        <a href="enrol.html" class="btn">Enrol Now</a>
+      </div>
     </section>
 
     <!-- About Us Section -->
     <section class="content-section py-16 px-4 bg-white">
       <div class="container mx-auto">
         <h2 class="text-4xl font-extrabold text-blue-800 mb-6">About Waheguru Nursing Classes</h2>
-        <p class="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed mb-10">
-          At Waheguru Nursing Classes, we are dedicated to shaping the future of nursing professionals. With a team of experienced educators and a student-centric approach, we provide top-notch coaching for various nursing entrance and recruitment examinations. Our aim is to empower students with the knowledge, skills, and confidence to excel in their careers and contribute meaningfully to the healthcare sector.
-        </p>
+        <div class="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed mb-10" style="background:#f8fafc; border-radius:1rem; padding:2rem; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+          <h3 class="text-2xl font-bold text-blue-700 mb-4">Our Mission</h3>
+          <p>
+            At Waheguru Nursing Classes, we are dedicated to shaping the next generation of globally competent nurses. Our mission is to provide exceptional, student-focused education that empowers aspiring nurses to excel in the NCLEX-RN examination and achieve their international career goals.
+          </p>
+          <h3 class="text-2xl font-bold text-blue-700 mt-8 mb-4">Why Choose Us?</h3>
+          <ul class="list-disc ml-8 mb-6">
+            <li>Personalized mentorship from experienced NCLEX-RN educators</li>
+            <li>Comprehensive, exam-oriented curriculum and resources</li>
+            <li>Emphasis on critical thinking and clinical decision-making</li>
+            <li>Guidance on international nursing standards and opportunities</li>
+            <li>Supportive community and ongoing motivation</li>
+          </ul>
+          <h3 class="text-2xl font-bold text-blue-700 mt-8 mb-4">Our Approach</h3>
+          <p>
+            We combine expert instruction with practical strategies, ensuring our students master NCLEX-RN content and develop the confidence to succeed in diverse healthcare environments. Our holistic approach prepares nurses not just for exams, but for real-world challenges abroad.
+          </p>
+          <h3 class="text-2xl font-bold text-blue-700 mt-8 mb-4">Start Your Global Nursing Journey</h3>
+          <p>
+            Whether you aim to practice in the United States, Canada, New Zealand, or beyond, Waheguru Nursing Classes is your trusted partner. Join us to transform your ambitions into achievements, supported by a community that values your success and guided by the blessings of Waheguru.
+          </p>
+        </div>
         <div class="grid md:grid-cols-3 gap-8 cards">
           <div class="card">
             <div class="icon">💡</div>
@@ -102,10 +127,10 @@
     </section>
 
     <!-- Features/Why Choose Us Section -->
-    <section class="cta-section py-16 px-4">
+    <section class="cta-section py-16 px-4" style="background: linear-gradient(90deg, #ede9fe 0%, #f3e8ff 100%); color: #3b0764;">
       <div class="container mx-auto">
-        <h2 class="text-4xl font-extrabold mb-8">Why Choose Waheguru Nursing Classes?</h2>
-        <p class="text-lg mb-10 max-w-3xl mx-auto">
+        <h2 class="text-4xl font-extrabold mb-8" style="color:#6d28d9;">Why Choose Waheguru Nursing Classes?</h2>
+        <p class="text-lg mb-10 max-w-3xl mx-auto" style="color:#5b21b6;">
           We stand out with our commitment to excellence, personalized attention, and a track record of success.
         </p>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 cards">
@@ -182,6 +207,7 @@
           <p class="text-gray-300">Uttarakhand, India - 263153</p>
           <p class="text-gray-300">Phone: +91 98765 43210</p>
           <p class="text-gray-300">Email: wahegurunursingclasses@gmail.com</p>
+          <p class="text-gray-300">Phone: <a href="tel:+917973908735" class="text-blue-600 hover:underline">+91 7973908735</a></p>
         </div>
     </div>
     <div class="text-center text-gray-500 mt-8 border-t border-gray-700 pt-4">
