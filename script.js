@@ -1,6 +1,6 @@
 // Maintenance Mode Check - This script runs immediately on page load
 // IMPORTANT: To activate maintenance mode, uncomment the line below.
-localStorage.setItem('maintenanceMode', 'True'); // This line enables maintenance mode
+localStorage.setItem('maintenanceMode', 'true'); // This line enables maintenance mode
 
 document.addEventListener('DOMContentLoaded', function() {
   const isMaintenanceMode = localStorage.getItem('maintenanceMode');
