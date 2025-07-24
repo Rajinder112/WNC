@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waheguru Nursing Classes - Enrol</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Custom style for backdrop-filter for transparency effect */
+    .backdrop-filter {
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+  </style>
+  <script src="script.js"></script> <!-- script.js loaded here for maintenance mode check -->
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <nav class="p-4 fixed w-full z-50 transition-colors duration-300 ease-in-out">
+    <div class="container mx-auto flex justify-between items-center relative">
+      <div class="logo flex items-center gap-3">
+        <a href="index.html">
+          <img src="images/logo.jpg" alt="Waheguru Nursing Classes Logo" class="w-10 h-10 rounded-full shadow-md">
+        </a>
+        <a href="index.html" class="text-white text-2xl font-bold">Waheguru Nursing Classes</a>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Home
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="classes.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Classes
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="gallery.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Gallery
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="enrol.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Enrol
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="contact.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none text-3xl">
+        &#9776; </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu md:hidden">
+      <button id="close-button" class="close-button">&times;</button> <ul class="flex flex-col items-center space-y-4 pt-16">
+        <li><a href="index.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Home</a></li>
+        <li><a href="classes.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Classes</a></li>
+        <li><a href="gallery.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Gallery</a></li>
+        <li><a href="enrol.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Enrol</a></li>
+        <li><a href="contact.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="form-section pt-32 pb-16 px-4 bg-gray-50">
+      <div class="container mx-auto">
+        <div class="form-container">
+          <h2 class="text-4xl font-extrabold text-blue-800 mb-8">Enrol in Our Classes</h2>
+          <p class="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-10">
+            Please fill out the form below to register your interest in our nursing classes. Our team will get back to you shortly.
+          </p>
+          <form id="enrolForm">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
+            </div>
+            <div class="form-group">
+              <label for="course">Interested Course</label>
+              <select id="course" name="course" required>
+                <option value="">Select a Course</option>
+                <option value="bsc_nursing_entrance">B.Sc. Nursing Entrance Coaching</option>
+                <option value="aiims_norcet">AIIMS NORCET Coaching</option>
+                <option value="state_psc_nursing">State PSC Nursing Exams Coaching</option>
+                <option value="other">Other (Please specify in Message)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="education">Highest Education Qualification</label>
+              <input type="text" id="education" name="education" placeholder="e.g., 12th Pass, GNM, B.Sc. Nursing" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message / Questions (Optional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Any specific questions or details you'd like to share..."></textarea>
+            </div>
+            <button type="submit">Submit Enrolment</button>
+            <div id="enrolSuccess" class="success-message mt-4 hidden">
+              Thank you for your enrolment! We have received your details and will contact you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-xl font-semibold mb-3">Waheguru Nursing Classes</h4>
+        <p class="text-gray-300">Empowering future nurses with quality education and compassionate care.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-gray-300">
+            <li><a href="index.html" class="hover:text-amber-400 transition duration-300">Home</a></li>
+            <li><a href="classes.html" class="hover:text-amber-400 transition duration-300">Classes</a></li>
+            <li><a href="gallery.html" class="hover:text-amber-400 transition duration-300">Gallery</a></li>
+            <li><a href="enrol.html" class="hover:text-amber-400 transition duration-300">Enrol</a></li>
+            <li><a href="contact.html" class="hover:text-amber-400 transition duration-300">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-3">Contact Us</h4>
+          <p class="text-gray-300">123 Nursing Lane, Rudrapur</p>
+          <p class="text-gray-300">Uttarakhand, India - 263153</p>
+          <p class="text-gray-300">Phone: +91 98765 43210</p>
+          <p class="text-gray-300">Email: wahegurunursingclasses@gmail.com</p>
+        </div>
+    </div>
+    <div class="text-center text-gray-500 mt-8 border-t border-gray-700 pt-4">
+      &copy; 2025 Waheguru Nursing Classes. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

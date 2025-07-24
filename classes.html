@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waheguru Nursing Classes - Our Classes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Custom style for backdrop-filter for transparency effect */
+    .backdrop-filter {
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+  </style>
+  <script src="script.js"></script> <!-- script.js loaded here for maintenance mode check -->
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <nav class="p-4 fixed w-full z-50 transition-colors duration-300 ease-in-out">
+    <div class="container mx-auto flex justify-between items-center relative">
+      <div class="logo flex items-center gap-3">
+        <a href="index.html">
+          <img src="images/logo.jpg" alt="Waheguru Nursing Classes Logo" class="w-10 h-10 rounded-full shadow-md">
+        </a>
+        <a href="index.html" class="text-white text-2xl font-bold">Waheguru Nursing Classes</a>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Home
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="classes.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Classes
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="gallery.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Gallery
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="enrol.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Enrol
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="contact.html" class="text-white hover:text-amber-400 transition duration-300 text-lg font-medium relative group">Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </div>
+
+      <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none text-3xl">
+        &#9776; </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu md:hidden">
+      <button id="close-button" class="close-button">&times;</button> <ul class="flex flex-col items-center space-y-4 pt-16">
+        <li><a href="index.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Home</a></li>
+        <li><a href="classes.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Classes</a></li>
+        <li><a href="gallery.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Gallery</a></li>
+        <li><a href="enrol.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Enrol</a></li>
+        <li><a href="contact.html" class="text-white text-2xl hover:text-amber-400 transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="content pt-32 pb-16 px-4 bg-gray-50">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-extrabold text-blue-800 mb-6">Our Comprehensive Classes</h1>
+        <p class="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed mb-10">
+          Waheguru Nursing Classes offers a diverse range of programs designed to cater to the specific needs of aspiring nursing professionals. Our curriculum is regularly updated to align with the latest exam patterns and industry standards.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100 transform hover:-translate-y-1">
+            <div class="icon-circle bg-blue-100 text-blue-600 mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full text-3xl">
+              📚
+            </div>
+            <h3 class="text-2xl font-bold text-blue-700 mb-3">B.Sc. Nursing Entrance Coaching</h3>
+            <p class="text-gray-600 mb-4">Comprehensive preparation for undergraduate nursing entrance examinations.</p>
+            <ul class="text-left text-gray-700 space-y-2 mb-6 list-none pl-0">
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Physics, Chemistry, Biology</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> General Knowledge & Aptitude</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Regular Mock Tests & Analysis</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Expert Faculty Support</li>
+            </ul>
+            <a href="enrol.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-blue-900 font-bold py-2 px-6 rounded-full transition duration-300">Enrol Now</a>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100 transform hover:-translate-y-1">
+            <div class="icon-circle bg-amber-100 text-amber-600 mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full text-3xl">
+              🏥
+            </div>
+            <h3 class="text-2xl font-bold text-blue-700 mb-3">AIIMS NORCET Coaching</h3>
+            <p class="text-gray-600 mb-4">Specialized and intensive coaching for the prestigious AIIMS NORCET examination.</p>
+            <ul class="text-left text-gray-700 space-y-2 mb-6 list-none pl-0">
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Clinical Nursing Subjects</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Non-Nursing Subjects (Aptitude, GK, Comp)</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Previous Year Paper Discussion</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> High-Yield Topics Focus</li>
+            </ul>
+            <a href="enrol.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-blue-900 font-bold py-2 px-6 rounded-full transition duration-300">Enrol Now</a>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100 transform hover:-translate-y-1">
+            <div class="icon-circle bg-green-100 text-green-600 mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full text-3xl">
+              🏛️
+            </div>
+            <h3 class="text-2xl font-bold text-blue-700 mb-3">State PSC Nursing Exams Coaching</h3>
+            <p class="text-gray-600 mb-4">Tailored programs to help you ace various State Public Service Commission nursing examinations.</p>
+            <ul class="text-left text-gray-700 space-y-2 mb-6 list-none pl-0">
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> State-specific Syllabus Coverage</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Targeted Practice Questions</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Interview Preparation (if applicable)</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Current Affairs Updates</li>
+            </ul>
+            <a href="enrol.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-blue-900 font-bold py-2 px-6 rounded-full transition duration-300">Enrol Now</a>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100 transform hover:-translate-y-1">
+            <div class="icon-circle bg-purple-100 text-purple-600 mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full text-3xl">
+              🎓
+            </div>
+            <h3 class="text-2xl font-bold text-blue-700 mb-3">GNM & ANM Entrance Coaching</h3>
+            <p class="text-gray-600 mb-4">Foundation courses for General Nursing and Midwifery (GNM) and Auxiliary Nurse Midwife (ANM) entrance exams.</p>
+            <ul class="text-left text-gray-700 space-y-2 mb-6 list-none pl-0">
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Basic Science & Maths</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> English & General Aptitude</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Nursing Fundamentals</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Dedicated Doubt Sessions</li>
+            </ul>
+            <a href="enrol.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-blue-900 font-bold py-2 px-6 rounded-full transition duration-300">Enrol Now</a>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100 transform hover:-translate-y-1">
+            <div class="icon-circle bg-red-100 text-red-600 mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full text-3xl">
+              👩‍⚕️
+            </div>
+            <h3 class="text-2xl font-bold text-blue-700 mb-3">Post Basic B.Sc. Nursing Entrance</h3>
+            <p class="text-gray-600 mb-4">Specialized coaching for GNM graduates aspiring for a Post Basic B.Sc. Nursing degree.</p>
+            <ul class="text-left text-gray-700 space-y-2 mb-6 list-none pl-0">
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Nursing Subjects Refresher</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Research & Statistics Basics</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> English & Communication Skills</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Advanced Clinical Concepts</li>
+            </ul>
+            <a href="enrol.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-blue-900 font-bold py-2 px-6 rounded-full transition duration-300">Enrol Now</a>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100 transform hover:-translate-y-1">
+            <div class="icon-circle bg-teal-100 text-teal-600 mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full text-3xl">
+              📋
+            </div>
+            <h3 class="text-2xl font-bold text-blue-700 mb-3">Nursing Officer Recruitment Exams</h3>
+            <p class="text-gray-600 mb-4">Preparation for various central and state government nursing officer recruitment exams.</p>
+            <ul class="text-left text-gray-700 space-y-2 mb-6 list-none pl-0">
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Broad Spectrum Nursing Syllabus</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Reasoning & Numerical Ability</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> General English & Hindi</li>
+              <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Interview & Document Verification Prep</li>
+            </ul>
+            <a href="enrol.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-blue-900 font-bold py-2 px-6 rounded-full transition duration-300">Enrol Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blue-800 text-white py-16 px-4 text-center">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-extrabold mb-8">Why Choose WNC for Your Nursing Career?</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="p-6 bg-blue-700 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-3">Expert Faculty</h3>
+            <p class="text-blue-200">Learn from the best educators with years of experience and proven track records.</p>
+          </div>
+          <div class="p-6 bg-blue-700 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-3">Updated Study Material</h3>
+            <p class="text-blue-200">Access to meticulously curated and regularly updated study resources.</p>
+          </div>
+          <div class="p-6 bg-blue-700 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-3">Interactive Learning</h3>
+            <p class="text-blue-200">Engage in dynamic classes, discussions, and doubt-clearing sessions.</p>
+          </div>
+          <div class="p-6 bg-blue-700 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-3">Proven Success</h3>
+            <p class="text-blue-200">Join a long list of successful students who achieved their dreams with WNC.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-xl font-semibold mb-3">Waheguru Nursing Classes</h4>
+        <p class="text-gray-300">Empowering future nurses with quality education and compassionate care.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-gray-300">
+            <li><a href="index.html" class="hover:text-amber-400 transition duration-300">Home</a></li>
+            <li><a href="classes.html" class="hover:text-amber-400 transition duration-300">Classes</a></li>
+            <li><a href="gallery.html" class="hover:text-amber-400 transition duration-300">Gallery</a></li>
+            <li><a href="enrol.html" class="hover:text-amber-400 transition duration-300">Enrol</a></li>
+            <li><a href="contact.html" class="hover:text-amber-400 transition duration-300">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-3">Contact Us</h4>
+          <p class="text-gray-300">123 Nursing Lane, Rudrapur</p>
+          <p class="text-gray-300">Uttarakhand, India - 263153</p>
+          <p class="text-gray-300">Phone: +91 98765 43210</p>
+          <p class="text-gray-300">Email: wahegurunursingclasses@gmail.com</p>
+        </div>
+    </div>
+    <div class="text-center text-gray-500 mt-8 border-t border-gray-700 pt-4">
+      &copy; 2025 Waheguru Nursing Classes. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
