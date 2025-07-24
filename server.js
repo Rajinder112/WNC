@@ -7,13 +7,14 @@ const PORT = process.env.PORT || 3000;
 // Serve static files from the current directory
 app.use(express.static(__dirname));
 
-// Redirect root domain to www subdomain
+// Redirect root domain to www subdomain and force HTTPS
 app.use((req, res, next) => {
   if (
     req.hostname === 'wahegurunursingclasses.com' ||
-    req.hostname === 'wahegurunursingclasses.com.'.replace(/\.$/, '')
+    req.hostname === 'wahegurunursingclasses.com'
   ) {
-    return res.redirect(301, 'https://www.wahegurunursingclasses.com' + req.originalUrl);
+    // Force HTTPS + www
+    return res.redirect(301, `https://www.wahegurunursingclasses.com${req.originalUrl}`);
   }
   next();
 });
